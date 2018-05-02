@@ -8,7 +8,7 @@ def prime?(x)
   if x <= 1 
     return false
   else
-    # for optimization using Math. structure have this line: sqrt_x = Math.sqrt(x)
+    # for optimization using Math. structure have this line: sqrt_x = Math.sqrt(x) and substitute it for (x-1) to reduce checks.
     prime_check_array = []
       for numbers in 2..(x-1) do
         prime_check_array.push(x % numbers)
