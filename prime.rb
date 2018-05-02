@@ -11,9 +11,9 @@ def prime?(x)
     # for optimization using Math. structure have this line: sqrt_x = Math.sqrt(x)
     prime_check_array = []
       for numbers in 2..(x-1) do
-        sqrt_check_array.push(x % numbers)
+        prime_check_array.push(x % numbers)
       end
-     if sqrt_check_array.include?(0) == true 
+     if prime_check_array.include?(0) == true 
        return false
      else
        return true
