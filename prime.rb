@@ -5,7 +5,7 @@
 
 
 def prime?(x)
-  if x !> 1 
+  if x <= 1 
     return false
   else
     # for optimization using Math. structure have this line: sqrt_x = Math.sqrt(x)
