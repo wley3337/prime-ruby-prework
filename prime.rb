@@ -8,14 +8,15 @@ def prime?(x)
   if x !> 1 
     return false
   else
-    sqrt_x = Math.sqrt(x.abs)
+    sqrt_x = Math.sqrt(x)
     sqrt_check_array = []
       for numbers in 2..sqrt_x do
-        sqrt_check_array.push(x.abs % numbers)
+        sqrt_check_array.push(x % numbers)
       end
      if sqrt_check_array.include?(0) == true 
        return false
      else
        return true
      end
+   end
 end
